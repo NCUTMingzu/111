@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/popper.js"></script>
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../css/blog.css" />
+<link rel="stylesheet" type="text/css" href="../css/custom.css" />
+<link rel="stylesheet" type="text/css" href="../css/page/info.css" />
+<style>    
+    #info{
+        background-color: rgba(176, 248, 245, 0.5);
+    } 
+    th{
+        text-align: center;
+    }
+    th,td{
+        border: 1px solid black;
+        padding: 1px 5px;
+        vertical-align: center;
+    } 
+    td>ul>li{
+        list-style: none;
+    }  
+</style>
+</head>
+
+<body>
+        <div id="title">
+            <h1>{{h1}}</h1>
+            <h2>{{h2}}</h2>
+        </div>
+        <div class="container">      
+            <div class="nav-scroller py-1 mb-2" style="border-bottom: 1px solid black;">
+                <nav class="nav d-flex justify-content-between">
+                  <a class="p-2 text-muted" id="index" href="index.html">首頁</a>
+                  <a class="p-2 text-muted" id="plan" href="plan.html">計畫內容</a>
+                  <!-- <a class="p-2 text-muted" id="cooperate" href="cooperate.html">合作企業</a> -->
+                  <!-- <a class="p-2 text-muted" id="info" href="info.html">課程資訊</a> -->
+                  <a class="p-2 text-muted" id="intern" href="intern.html">合作企業校外實習</a>
+                  <!-- <a class="p-2 text-muted" id="project" href="project.html">計畫成果專區</a> -->
+                  <a class="p-2 text-muted" id="contact" href="contact.html">聯繫我們</a>
+                </nav>
+              </div>
+      
+   
+      
+      <main role="main" class="container">
+        <div class="row">
+            <!--內文-->
+            <h1>課程資訊</h1>        
+            <div class="blog-post">
+                <h2>1、課程資訊</h2>   
+                <table>
+                    <tr>
+                        <th rowspan="2">預定開課學期</th>
+                        <th rowspan="2">課程名稱</th>
+                        <th rowspan="2">預定授課師資--校內、校外、業界(園區)、業界(其他)</th>
+                        <th rowspan="2">預計選修人數</th>
+                        <th colspan="3">時數</th>                        
+                        <th rowspan="2">開設系所/學制/年級</th>
+                        <th rowspan="2">學分數</th>
+                        <th rowspan="2">必/選修課程</th>
+                        <th rowspan="2">是否規劃專題實作</th>
+                        <th rowspan="2">是否為補助課程</th>
+                    </tr>
+                    <tr>                       
+                        <!--時數-->
+                        <th>上課</th>
+                        <th>實作</th>
+                        <th>合計</th>
+                        <!--時數end-->                        
+                    </tr>
+                    <tr>
+                        <th colspan="12">108上學期共1門課，其中1門為補助課程</th>
+                    </tr>
+                    <tr>
+                        <td>上學期</td>
+                        <td>電腦輔助製造</td>
+                        <td>
+                            陳紹賢(校內)<br/>
+                            尤正裕(其他)<br/>
+                            陳佳偉(園區)<br/> 
+                        </td>
+                        <td>30</td>
+                        <td>36</td>
+                        <td>18</td>
+                        <td>54</td>
+                        <td>機械工程系/四年制/三年級</td>
+                        <td>3</td>
+                        <td>選修</td>
+                        <td>是</td>
+                        <td>是</td>
+                    </tr> 
+                    <tr>
+                        <th colspan="12">108下學期共2門課，其中2門為補助課程</th>
+                    </tr>
+                    <tr>
+                        <td>下學期</td>
+                        <td>電腦輔助設計</td>
+                        <td>
+                            謝明珠(校內)<br/>
+                            王宏泰(其他)<br/>
+                            林高民(園區)<br/>
+                        </td>
+                        <td>30</td>
+                        <td>36</td>
+                        <td>18</td>
+                        <td>54</td>
+                        <td>機械工程系/四年制/三年級</td>
+                        <td>3</td>
+                        <td>必修</td>
+                        <td>是</td>
+                        <td>是</td>
+                    </tr>
+                    <tr>
+                        <td>下學期</td>
+                        <td>機械工程實驗（三)</td>
+                        <td>
+                            黃智勇(校內)<br/>
+                            陳正芳(園區)<br/>
+                            林榮森(其他)<br/>       
+                        </td>
+                        <td>50</td>
+                        <td>24</td>
+                        <td>30</td>
+                        <td>54</td>
+                        <td>機械工程系/四年制/三年級</td>
+                        <td>3</td>
+                        <td>必修</td>
+                        <td>是</td>
+                        <td>是</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">上下學期合計</td>
+                        <td>110</td>
+                        <td>96</td>
+                        <td>66</td>
+                        <td>162</td>
+                        <td></td>
+                        <td>9</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>                     
+                </table>
+                <br>
+                <h2>2、課程大綱</h2>
+                <table>
+                    <tr>
+                        <th>預定開課時間</th>
+                        <th>是否為補助課程</th>
+                        <th>課程名稱</th>
+                        <th>課程大綱</th>
+                    </tr>
+                    <tr>
+                        <td>108上學期</td>
+                        <td>是</td>
+                        <td>電腦輔助製造</td>
+                        <td>課程摘要<br/>
+                            使學生了解CAM基本的概念、觀念與原則，並將所學得之知識應用於設計中之相關問題上<br/>
+                            教學單元:<br/>
+                            1.基本指令<br/>
+                            2.曲面模型繪製<br/>
+                            3.實體模型繪製<br/>
+                            4.刀具路徑模擬（粗加工與精加工）<br/>
+                            5.實物之設計及繪製範例講解<br/>
+                            6.加工中心機操作講解<br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>108下學期</td>
+                        <td>是</td>
+                        <td>電腦輔助設計</td>
+                        <td>教學目標:<br/>
+                            1.使學生了解電腦輔助設計製圖之基本知識（知識）<br/>
+                            2.能具備電腦輔助設計製圖之相關技能（技能）<br/>
+                            3.能具備電腦輔助設計製圖人員之專業態度（態度）<br/>
+                            4.能瞭解電腦輔助設計製圖產業之市場及其發展情形（其他）<br/>
+                            課程大綱:<br/>
+                            1.3D參數式設計原理<br/>
+                            2.3D參數式操作技術<br/>
+                            3.草圖輪廓與限制條件<br/>
+                            4.零件塑型基礎<br/>
+                            5.元件特徵與工作特徵<br/>
+                            6.建立表格驅動零件<br/>
+                            7.建立圖面視圖<br/>
+                            8.組立零件<br/>
+                            9.建立材料表、件號與零件表<br/>
+                            10.專題實作<br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>108下學期</td>
+                        <td>是</td>
+                        <td>機械工程實驗（三）</td>
+                        <td>1.PLC在自動化設備的應用<br/>
+                            2.PLC基本指令、階梯圖設計實例<br/>
+                            3.狀態步進階梯圖<br/>
+                            4.電腦輔助PLC設計及人機介面開發<br/>
+                            5.輸送帶分料模組實習<br/>
+                            6.材質正反面翻轉模組實習<br/>
+                            7.機械手臂模組實習<br/>
+                            8.龍門移載模組實習<br/>
+                            9.左右選項出料模組實習<br/>
+                            10.三位置擺動模組實習<br/>
+                            11.二位置擺動模組實習<br/>
+                            12.圓料分離模組實習<br/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        <!-- /.blog-post -->
+        </div><!-- /.row -->
+        </main><!-- /.container -->
+    </div>
+</body>
+      
+<!--頁尾-->
+<footer class="blog-footer">
+    <footbox></footbox>
+    <div id="copyright">
+        <copyright></copyright>
+    </div>
+</footer>
+
+<script type="text/javascript" src="../js/vue.js"></script>
+<script type="text/javascript" src="../js/view/title.js"></script>
+<script type="text/javascript" src="../js/view/myfootbox.js"></script>
+<script type="text/javascript" src="../js/view/copyright.js"></script>
+<script>
+    title.$mount("#title");
+    var vm = new Vue({
+        el: '#copyright'
+    });
+    var vm2 = new Vue({
+        el: '.blog-footer'
+    });
+</script>
